@@ -10,9 +10,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`bg-white h-16 fixed top-0 left-0 w-full z-50 border-b border-black ${
-          isOpen ? "border-none" : "border-b border-black"
-        }`}
+        className={`bg-white h-16 fixed top-0 left-0 w-full z-50 `}
       >
         <ul className="ml-5 justify-between md:justify-evenly h-16 items-center text-black flex">
           <h3 className="hidden md:block">SHOP.CO</h3>
@@ -32,8 +30,12 @@ const Navbar = () => {
             />
           </div>
           <ul className="hidden md:flex">
-            <li className="mr-6 cursor-pointer">Shop</li>
-            <li className="mr-6 cursor-pointer">On Sale</li>
+            <select className="px-4">
+              <option>Shop</option>
+              <option>Shop</option>
+              <option>Shop</option>
+            </select>
+            <li className="mr-6 ml-4 cursor-pointer">On Sale</li>
             <li className="mr-6 cursor-pointer">New Arrivals</li>
             <li className="mr-6 cursor-pointer">Brands</li>
           </ul>
@@ -51,7 +53,7 @@ const Navbar = () => {
               <ICONS.CART fontSize={21} className="mr-2"/>
             </i>
             <i>
-              <ICONS.PROFILE fontSize={20} className="mr-2" />
+              <ICONS.PROFILE fontSize={22} className="mr-2" />
             </i>
           </div>
         </ul>
@@ -74,7 +76,7 @@ const Navbar = () => {
         onClick={toggleDrawer}
       >
         <div
-          className={`fixed top-0 p-5 left-0 h-full w-64 bg-customBlue text-black transition-transform transform ${
+          className={`fixed top-0 p-5 left-0 h-full w-64 bg-[#F0F0F0] text-black transition-transform transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
