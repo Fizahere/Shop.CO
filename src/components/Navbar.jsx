@@ -10,12 +10,12 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`bg-customBlue h-16 fixed top-0 left-0 w-full z-50 border-b border-black ${
+        className={`bg-white h-16 fixed top-0 left-0 w-full z-50 border-b border-black ${
           isOpen ? "border-none" : "border-b border-black"
         }`}
       >
         <ul className="ml-5 justify-between md:justify-evenly h-16 items-center text-black flex">
-          <h3 className="hidden md:block">SHOP.OO</h3>
+          <h3 className="hidden md:block">SHOP.CO</h3>
           <div className="flex md:hidden">
             <ICONS.HAMBURGER
               className={`text-xl cursor-pointer mr-4 ${
@@ -32,19 +32,18 @@ const Navbar = () => {
             />
           </div>
           <ul className="hidden md:flex">
-            <li className="mr-6 cursor-pointer">Home</li>
-            <li className="mr-6 cursor-pointer">About</li>
-            <li className="mr-6 cursor-pointer">Contact</li>
-            <li className="mr-6 cursor-pointer">Login</li>
-            <li className="mr-6 cursor-pointer">Register</li>
+            <li className="mr-6 cursor-pointer">Shop</li>
+            <li className="mr-6 cursor-pointer">On Sale</li>
+            <li className="mr-6 cursor-pointer">New Arrivals</li>
+            <li className="mr-6 cursor-pointer">Brands</li>
           </ul>
           <div className="hidden lg:flex relative">
-            <i className="absolute left-2 top-2.5">
-              <ICONS.SEARCH/>
+            <i className="absolute left-3 top-3">
+              <ICONS.SEARCH color="grey" fontWeight={'100'}/>
             </i>
             <input
-              className="border-2 border-black pl-7 pr-2 py-1 w-96 rounded-md"
-              placeholder="search here.."
+              className="bg-gray-100 pl-8 pr-2 py-2 w-96 rounded-full"
+              placeholder="search for products.."
             />
           </div>
           <div className="flex justify-between">
@@ -52,7 +51,7 @@ const Navbar = () => {
               <ICONS.CART fontSize={21} className="mr-2"/>
             </i>
             <i>
-              <ICONS.WISHLIST fontSize={20} className="mr-2" />
+              <ICONS.PROFILE fontSize={20} className="mr-2" />
             </i>
           </div>
         </ul>
