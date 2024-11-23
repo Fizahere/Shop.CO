@@ -6,12 +6,11 @@ import styleImage1 from '../assets/images/styleImage1.png'
 import styleImage2 from '../assets/images/styleImage2.png'
 import styleImage3 from '../assets/images/styleImage3.png'
 import styleImage4 from '../assets/images/styleImage4.png'
-import { div } from "framer-motion/client";
 
 const Home = () => {
   return (
     <>
-      <div className="mt-16 flex flex-col md:flex-row bg-[#F0F0F0]">
+      <div className="mt-16 flex md:justify-around flex-col md:flex-row bg-[#F0F0F0]">
         <div className="sm:px-24 md:px-28 px-4 py-14 text-black">
           <div>
             <div>
@@ -49,45 +48,45 @@ const Home = () => {
           </div>
         </div>
         <div className="flex">
-          <ICONS.SPARKLE fontSize={35} fill="black" className="mt-52 ml-10 sm:ml-1" />
-          <img src={mainCoverImage} className="h-[40rem]" />
+          <ICONS.SPARKLE fontSize={35} fill="black" className="mt-52 ml-6 sm:ml-1" />
+          <img src={mainCoverImage} className="h-[30rem] md:h-[40rem]" />
           <ICONS.SPARKLE fontSize={60} fill="black" className="mt-20" />
         </div>
       </div>
-      <div class="bg-black text-white py-9 px-7 flex flex-wrap justify-center">
-        <ul class="flex flex-wrap gap-5 lg:gap-28 justify-center md:justify-between">
-          <li class="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+      <div className="bg-black text-white py-9 px-7 flex flex-wrap justify-center">
+        <ul className="flex flex-wrap gap-5 lg:gap-28 justify-center md:justify-between">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
             VERSACE
           </li>
-          <li class="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
             ZARA
           </li>
-          <li class="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
             GUCCI
           </li>
-          <li class="flex-[1_1_20%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_20%] md:flex-[1_1_auto] text-2xl font-bold text-center">
             PRADA
           </li>
-          <li class="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
             Calvin Klein
           </li>
         </ul>
       </div>
       <div>
-        <p className="text-center font-extrabold text-3xl py-4 mt-8">
+        <p className="text-center font-extrabold text-3xl py-4 my-6">
           NEW ARRIVALS
         </p>
-        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2 md:ml-36">
           {[...Array(4)].map((_, index) => (
             <Card key={index} />
           ))}
         </div>
       </div>
       <div>
-        <p className="text-center font-extrabold text-3xl py-4 mt-4">
+        <p className="text-center font-extrabold text-3xl py-4 my-6">
           TOP SELLING
         </p>
-        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2 md:ml-36">
           {[...Array(4)].map((_, index) => (
             <Card key={index} />
           ))}
@@ -95,39 +94,46 @@ const Home = () => {
       </div>
 
       <div className="bg-[#F0F0F0] m-10 sm:px-4 md:px-10 py-10 px-2 sm:mx-24 md:mx-28 mx-4 rounded-3xl">
-        <p className="text-3xl font-extrabold text-center py-6">
-          BROWSE BY STYLE
+        <p className="text-3xl md:text-5xl font-extrabold text-center pb-8">
+          BROWSE BY DRESS STYLE
         </p>
         <div className="flex flex-col md:flex-row mb-4">
           <div className="relative w-auto md:w-2/3 h-60 md:mr-4">
-            <img src={styleImage4} className="rounded-3xl h-full w-full object-cover transform scale-x-[-1]" alt="Style Image" />
+            <img src={styleImage1} className="rounded-3xl h-full w-full object-cover transform scale-x-[-1]" alt="Style Image" />
             <p className="absolute left-2 top-2 font-bold text-2xl text-black">Casual</p>
           </div>
-          <div className="relative w-auto md:w-2/5 h-60 md:mr-4">
-            <img src={styleImage3} className="rounded-3xl h-full w-full object-cover" alt="Style Image" />
+          <div className="relative w-auto mt-4 md:mt-1 md:w-2/5 h-60 md:mr-4">
+            <img src={styleImage2} className="rounded-3xl h-full w-full object-cover transform scale-x-[-1]" alt="Style Image" />
             <p className="absolute left-2 top-2 font-bold text-2xl text-black">Formal</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row h-64">
+        <div className="flex flex-col md:flex-row">
           <div className="relative w-auto md:w-2/5 h-60 md:mr-4">
-            <img src={styleImage2} className="rounded-3xl h-full w-full object-cover" alt="Style Image" />
+            <img src={styleImage3} className="rounded-3xl h-full w-full object-cover" alt="Style Image" />
             <p className="absolute left-2 top-2 font-bold text-2xl text-black">Party</p>
           </div>
-          <div className="relative w-auto md:w-2/3 h-60 md:mr-4">
-            <img src={styleImage1} className="rounded-3xl h-full w-full object-cover" alt="Style Image" />
+          <div className="relative w-auto mt-4 md:mt-1 md:w-2/3 h-60 md:mr-4">
+            <img src={styleImage4} className="rounded-3xl h-full w-full object-cover" alt="Style Image" />
             <p className="absolute left-2 top-2 font-bold text-2xl text-black">Gym</p>
           </div>
         </div>
       </div>
 
-      <div className="sm:px-24 md:px-28 px-4">
+      <div className="sm:px-24 md:px-28 px-4 md:ml-0">
         <p className="font-extrabold text-3xl">OUR HAPPY CUSTOMERS</p>
-        <div className="flex">
-        {[...Array(3)].map((_,index)=>(
-<div className="bg-white border-2 border-gray-300 p-10">
-
-</div>
-        ))}
+        <div className="flex justify-between mt-6 flex-col lg:flex-row">
+          {[...Array(4)].map((_, index) => (
+            <div className="bg-white border-2 border-gray-300 p-6 w-80 md:w-96 rounded-lg mb-2 md:mb-0">
+              <i className="flex">
+                {[...Array(5)].map((_, index) => (
+                  <ICONS.FIILEDSTAR color="orange" />
+                ))}
+              </i>
+              <p className="font-bold text-black mt-4">Fiza.</p>
+              <p className="text-[#00000099] mt-1">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, neque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, neque."</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

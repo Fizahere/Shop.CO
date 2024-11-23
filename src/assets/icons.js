@@ -4,7 +4,18 @@ import { BsCart3 } from "react-icons/bs";
 import { FaRegHeart } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
-import { FaUserCircle } from "react-icons/fa";
+import { FaRegUserCircle } from "react-icons/fa";
+import { LuSparkle } from "react-icons/lu";
+import { FaTwitter } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { RiVisaLine } from "react-icons/ri";
+import { RiMastercardFill } from "react-icons/ri";
+import { FaApplePay } from "react-icons/fa";
+import { FaGooglePay } from "react-icons/fa6";
+import { FaCcPaypal } from "react-icons/fa6";
+import { TiMail } from "react-icons/ti";
 
 export const ICONS = {
     HAMBURGER: VscThreeBars,
@@ -13,5 +24,16 @@ export const ICONS = {
     WISHLIST: FaRegHeart,
     SEARCH: FaSearch,
     FIILEDSTAR:FaStar,
-    PROFILE: FaUserCircle
+    PROFILE: FaRegUserCircle,
+    SPARKLE:LuSparkle,
+    TWITTWER:FaTwitter,
+    FACEBOOK:BsFacebook,
+    INSTAGRAM:FaInstagram,
+    GITHUB:FaGithub,    
+    VISA:RiVisaLine,
+    MASTERCARD:RiMastercardFill,
+    PAYPAL:FaCcPaypal,
+    APPLEPAY:FaApplePay,
+    GOOGLEPAY:FaGooglePay,
+    MAIL:TiMail,
 }

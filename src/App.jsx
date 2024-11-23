@@ -8,7 +8,6 @@ function App() {
     <>
       <Navbar />
       <Home/>
-      <div className="min-h-screen bg-customBlue"></div>
       <Footer />
     </>
   );

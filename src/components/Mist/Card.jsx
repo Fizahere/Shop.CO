@@ -8,7 +8,7 @@ const Card = () => {
       <div>
         <img src={productImage} className="w-44 sm:w-52 md:w-72 h-48 sm:h-52 md:h-80 rounded-md" alt="" />
         <div className="px-2">
-          <p className="font-bold text-md md:text-lg mt-2 w-44 sm:w-52 md:w-72">
+          <p className="font-bold text-md md:text-lg mt-2 w-40 md:w-48 md:w-72">
             Black T-Shirt, available in all sizes
           </p>
           <span className="flex items-center">
