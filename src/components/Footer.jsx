@@ -102,9 +102,10 @@ const Footer = () => {
               <i className='bg-white py-2 px-4 md:px-6 rounded-lg mr-2  md:ml-4'>
                 <ICONS.APPLEPAY className='text-3xl md:text-5xl' />
               </i>
-              <i className='bg-white py-2 px-4 md:px-6 rounded-lg mr-2  md:ml-4'>
-                <ICONS.GOOGLEPAY className='text-3xl md:text-5xl' />
-              </i>
+              <div className='bg-white flex items-center py-2 px-4 md:px-6 rounded-lg mr-2  md:ml-4'>
+                <ICONS.GOOGLEPAY className='text-sm md:text-5xl mt-0.5' />
+              <p className='text-xs font-bold ml-0.5'>Pay</p>
+              </div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import { FaGithub } from "react-icons/fa";
 import { RiVisaLine } from "react-icons/ri";
 import { RiMastercardFill } from "react-icons/ri";
 import { FaApplePay } from "react-icons/fa";
-import { FaGooglePay } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
 import { FaCcPaypal } from "react-icons/fa6";
 import { TiMail } from "react-icons/ti";
 
@@ -34,6 +34,6 @@ export const ICONS = {
     MASTERCARD:RiMastercardFill,
     PAYPAL:FaCcPaypal,
     APPLEPAY:FaApplePay,
-    GOOGLEPAY:FaGooglePay,
+    GOOGLEPAY:FcGoogle,
     MAIL:TiMail,
 }

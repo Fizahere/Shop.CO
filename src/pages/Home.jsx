@@ -55,19 +55,19 @@ const Home = () => {
       </div>
       <div className="bg-black text-white py-9 px-7 flex flex-wrap justify-center">
         <ul className="flex flex-wrap gap-5 lg:gap-28 justify-center md:justify-between">
-          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center tracking-widest font-normal">
             VERSACE
           </li>
-          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center font-serif">
             ZARA
           </li>
-          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center font-serif">
             GUCCI
           </li>
-          <li className="flex-[1_1_20%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_20%] md:flex-[1_1_auto] text-2xl font-bold text-center font-serif">
             PRADA
           </li>
-          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center">
+          <li className="flex-[1_1_30%] md:flex-[1_1_auto] text-2xl font-bold text-center font-thin">
             Calvin Klein
           </li>
         </ul>
