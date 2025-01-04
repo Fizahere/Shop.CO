@@ -1,23 +1,36 @@
 import React, { useState } from 'react';
 import image from '../assets/images/productImage.png';
+import image1 from '../assets/images/productImage3.png';
+import image2 from '../assets/images/productImage5.png';
 import { ICONS } from '../assets/icons';
 import Ratings from './Ratings';
 
 const ProductDetail = () => {
     const [count, setCount] = useState(1);
     const [tab, setTab] = useState('ProductDetail')
-
-
+    const [selectedImage, setSelectedImage] = useState(0)
+    const images = [
+        image, image1, image2
+    ]
+    const handleImageClick = (index) => {
+        setSelectedImage(index)
+    }
     return (
         <div className='mt-10 sm:px-24 md:px-32 px-3 py-14'>
             <div className="flex flex-col lg:flex-row">
                 <div className='flex flex-col-reverse lg:flex-row'>
                     <div className="flex lg:flex-col">
-                        {[...Array(3)].map((_, index) => (
-                            <img key={index} src={image} alt='product image' className='mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black' />
+                        {images.map((_, index) => (
+                            <img
+                                key={index}
+                                src={_}
+                                alt='product image'
+                                className='mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black'
+                                onClick={()=>handleImageClick(index)}
+                            />
                         ))}
                     </div>
-                    <img src={image} alt="product image" className='h-72 w-full md:h-[34rem] md:w-[34rem] md:ml-2 rounded-2xl' />
+                    <img src={images[selectedImage]} alt="product image" className='h-72 w-full md:h-[34rem] md:w-[34rem] md:ml-2 rounded-2xl' />
                 </div>
                 <div className='ml-4 space-y-3 md:space-y-4 mt-4 md:mt-8 lg:mt-0'>
                     <p className='text-2xl font-bold md:text-4xl md:font-extrabold'>Black T-shirt, available in all sizes</p>
@@ -103,7 +116,7 @@ const ProductDetail = () => {
                         FAQs
                     </p>
                 </div>
-                <Ratings/>
+                <Ratings />
             </div>
         </div>
     )
