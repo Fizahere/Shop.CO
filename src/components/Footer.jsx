@@ -24,7 +24,7 @@ const Footer = () => {
               </i>
               <input type="text" placeholder='enter your email address' className='rounded-full pl-14 pr-10 py-1 md:py-2 mb-3' />
             </div>
-            <button className='text-black bg-white rounded-full px-14  py-1 md:py-2'>Subscribe to Newsletter</button>
+            <button className='text-black bg-white rounded-full px-14 py-1 md:py-2'>Subscribe to Newsletter</button>
           </div>
         </div>
 

@@ -13,7 +13,9 @@ const ProductDetail = () => {
     const [tab, setTab] = useState('ProductDetail')
     const [selectedImage, setSelectedImage] = useState(0)
     const images = [
-        image, image1, image2
+        image,
+        image1,
+        image2,
     ]
     const handleImageClick = (index) => {
         setSelectedImage(index)
@@ -81,7 +83,7 @@ const ProductDetail = () => {
                                 onClick={() => setCount(count + 1)}
                             >+</p>
                         </div>
-                        <button className='bg-black text-white font-light rounded-full py-3 w-full'>Add to Cart</button>
+                        <button className='bg-black text-white font-light active:font-normal rounded-full py-3 w-full'>Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -122,7 +124,7 @@ const ProductDetail = () => {
                 {tab === 'Ratings' ?
                     <Ratings />
                     : tab === 'Faqs' ? <FAQ /> :
-                        <p>Product details page</p>
+                        <p className='text-center mt-10 text-lg'>Product details page</p>
                 }
             </div>
             <p className='text-2xl md:text-5xl font-bold md:font-extrabold text-center mt-10 md:mt-20'>YOU MIGHT ALSO LIKE</p>
