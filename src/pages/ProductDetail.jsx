@@ -20,13 +20,13 @@ const ProductDetail = () => {
             <div className="flex flex-col lg:flex-row">
                 <div className='flex flex-col-reverse lg:flex-row'>
                     <div className="flex lg:flex-col">
-                        {images.map((_, index) => (
+                        {images.map((img, index) => (
                             <img
                                 key={index}
-                                src={_}
+                                src={img}
                                 alt='product image'
-                                className='mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black'
-                                onClick={()=>handleImageClick(index)}
+                                className={`mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black ${images[index]=== images[selectedImage]?'border-2':'border-none'}`}
+                                onClick={() => handleImageClick(index)}
                             />
                         ))}
                     </div>
