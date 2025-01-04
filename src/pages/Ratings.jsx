@@ -39,6 +39,9 @@ const Ratings = () => {
                     </div>
                 ))}
             </div>
+           <div className="flex justify-center mt-8">
+           <button className='border-2 px-4 py-2 rounded-full active:border-black active:font-bold'>Load More Reviews</button>
+           </div>
         </>
     )
 }

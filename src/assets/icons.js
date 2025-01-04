@@ -20,6 +20,8 @@ import { TbTrash } from "react-icons/tb";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
+import { PiCreditCardLight } from "react-icons/pi";
+import { HiArrowRight } from "react-icons/hi";
 
 export const ICONS = {
     HAMBURGER: VscThreeBars,
@@ -44,5 +46,7 @@ export const ICONS = {
     SETTING:GiSettingsKnobs,
     THREEDOTS:BsThreeDots,
     VERIFIED:RiVerifiedBadgeFill,
+    CREDITCARD:PiCreditCardLight,
+    RIGHTARROW:HiArrowRight,
 
 }

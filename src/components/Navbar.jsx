@@ -64,7 +64,10 @@ const Navbar = ({ RoutesName }) => {
           </div>
           <div className={`flex justify-between md:ml-6 md:ml-0 ${isOpen || isCartOpen ? 'hidden' : 'block'}`}>
             <i>
-              <ICONS.CART fontSize={21} className="mr-6 md:mr-4 cursor-pointer" onClick={toggleCartDrawer} />
+              <Link to={RoutesName.CART}>
+              <ICONS.CART fontSize={21} className="mr-6 md:mr-4 cursor-pointer"/>
+              </Link>
+              {/* <ICONS.CART fontSize={21} className="mr-6 md:mr-4 cursor-pointer" onClick={toggleCartDrawer} /> */}
             </i>
             <i>
               <ICONS.PROFILE fontSize={22} className="mr-6 cursor-pointer" />

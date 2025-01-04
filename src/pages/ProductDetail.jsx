@@ -4,6 +4,9 @@ import image1 from '../assets/images/productImage3.png';
 import image2 from '../assets/images/productImage5.png';
 import { ICONS } from '../assets/icons';
 import Ratings from './Ratings';
+import Card from '../components/Mist/Card';
+import FAQ from './Faq';
+import { p } from 'framer-motion/client';
 
 const ProductDetail = () => {
     const [count, setCount] = useState(1);
@@ -25,7 +28,7 @@ const ProductDetail = () => {
                                 key={index}
                                 src={img}
                                 alt='product image'
-                                className={`mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black ${images[index]=== images[selectedImage]?'border-2':'border-none'}`}
+                                className={`mt-2 lg:mt-0 ml-2 lg:ml-0 h-24 w-32 md:h-44 md:w-44 mb-2 rounded-2xl cursor-pointer active:border-2 border-black ${images[index] === images[selectedImage] ? 'border-2' : 'border-none'}`}
                                 onClick={() => handleImageClick(index)}
                             />
                         ))}
@@ -116,7 +119,17 @@ const ProductDetail = () => {
                         FAQs
                     </p>
                 </div>
-                <Ratings />
+                {tab === 'Ratings' ?
+                    <Ratings />
+                    : tab === 'Faqs' ? <FAQ /> :
+                        <p>Product details page</p>
+                }
+            </div>
+            <p className='text-2xl md:text-5xl font-bold md:font-extrabold text-center mt-10 md:mt-20'>YOU MIGHT ALSO LIKE</p>
+            <div className="flex overflow-auto space-x-2 mt-5 md:mt-10">
+                {[...Array(5)].map((_, index) => (
+                    <Card key={index} />
+                ))}
             </div>
         </div>
     )

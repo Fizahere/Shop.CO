@@ -6,7 +6,7 @@ const Category = ({RoutesName}) => {
     const { category } = useParams()
     return (
         <div className='min-h-screen mt-10 sm:px-24 md:px-32 px-4 py-14 bg-[#faf9f9]'>
-            <div class="flex items-center space-x-2 text-sm text-gray-600">
+            <div className="flex items-center space-x-2 text-sm text-gray-600">
                 <Link to={'/'}>Home</Link>
                 <span>{'>'}</span>
                 <p>Category</p>
