@@ -49,7 +49,7 @@ const ProductDetail = () => {
                     <div className='border-y-2 py-6 sm:w-full'>
                         <p className='text-zinc-500'>Select Color</p>
                         <div className='flex space-x-4 mt-4'>
-                            {['bg-black', 'bg-pink-500', 'bg-red-800'].map((_, index) => (
+                            {['bg-black', 'bg-orange-600', 'bg-gradient-to-r to-orange-500 from-black'].map((_, index) => (
                                 <div className={`${_} p-6 rounded-full w-1 cursor-pointer`}></div>
                             ))}
                         </div>
