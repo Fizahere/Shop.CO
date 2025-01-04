@@ -49,7 +49,7 @@ const Home = () => {
         </div>
         <div className="flex">
           <ICONS.SPARKLE fontSize={35} fill="black" className="mt-52 ml-6 sm:ml-1" />
-          <img src={mainCoverImage} className="h-[30rem] md:h-[40rem]" />
+          <img src={mainCoverImage} className="h-[27rem] md:h-[40rem]" />
           <ICONS.SPARKLE fontSize={60} fill="black" className="mt-20" />
         </div>
       </div>
@@ -76,7 +76,7 @@ const Home = () => {
         <p className="text-center font-extrabold text-3xl py-4 my-6">
           NEW ARRIVALS
         </p>
-        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2 md:ml-36">
+        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2">
           {[...Array(4)].map((_, index) => (
             <Card key={index} />
           ))}
@@ -86,7 +86,7 @@ const Home = () => {
         <p className="text-center font-extrabold text-3xl py-4 my-6">
           TOP SELLING
         </p>
-        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2 md:ml-36">
+        <div className="sm:px-24 md:px-28 px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 ml-2">
           {[...Array(4)].map((_, index) => (
             <Card key={index} />
           ))}
@@ -123,7 +123,7 @@ const Home = () => {
         <p className="font-extrabold text-3xl">OUR HAPPY CUSTOMERS</p>
         <div className="flex justify-between mt-6 flex-col lg:flex-row">
           {[...Array(4)].map((_, index) => (
-            <div className="bg-white border-2 border-gray-300 p-6 w-80 md:w-96 rounded-lg mb-2 md:mb-0">
+            <div className="bg-white border-2 border-gray-300 p-6 w-80 md:w-96 rounded-lg mb-2 md:mb-0 lg:mx-2">
               <i className="flex">
                 {[...Array(5)].map((_, index) => (
                   <ICONS.FIILEDSTAR color="orange" />

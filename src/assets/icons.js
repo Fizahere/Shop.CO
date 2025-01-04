@@ -16,6 +16,10 @@ import { FaApplePay } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaCcPaypal } from "react-icons/fa6";
 import { TiMail } from "react-icons/ti";
+import { TbTrash } from "react-icons/tb";
+import { GiSettingsKnobs } from "react-icons/gi";
+import { BsThreeDots } from "react-icons/bs";
+import { RiVerifiedBadgeFill } from "react-icons/ri";
 
 export const ICONS = {
     HAMBURGER: VscThreeBars,
@@ -36,4 +40,9 @@ export const ICONS = {
     APPLEPAY:FaApplePay,
     GOOGLEPAY:FcGoogle,
     MAIL:TiMail,
+    TRASH:TbTrash,
+    SETTING:GiSettingsKnobs,
+    THREEDOTS:BsThreeDots,
+    VERIFIED:RiVerifiedBadgeFill,
+
 }
