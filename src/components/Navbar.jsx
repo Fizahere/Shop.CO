@@ -26,7 +26,7 @@ const Navbar = ({ RoutesName }) => {
         className={`bg-white h-16 fixed top-0 left-0 w-full z-20`}
       >
         <ul className="ml-5 justify-between items-center md:justify-evenly h-16 items-center text-black flex">
-          <h3 className="hidden md:block text-black font-extrabold text-3xl"><Link to={'/'}>SHOP.CO</Link></h3>
+          <h3 className="hidden md:block text-black font-extrabold text-3xl"><Link to={'/'}><div className="flex items-center space-x-2"><ICONS.LOGO className="text-black text-md"/><p>SHOP.CO</p></div></Link></h3>
           <div className="flex md:hidden">
             <ICONS.HAMBURGER
               className={`text-xl cursor-pointer mt-2 mr-4 ${isOpen ? "hidden" : "block"

@@ -22,8 +22,10 @@ import { BsThreeDots } from "react-icons/bs";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { PiCreditCardLight } from "react-icons/pi";
 import { HiArrowRight } from "react-icons/hi";
+import { GiHighHeel } from "react-icons/gi";
 
 export const ICONS = {
+    LOGO:GiHighHeel,
     HAMBURGER: VscThreeBars,
     CLOSE: IoClose,
     CART: BsCart3,
